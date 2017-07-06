@@ -63,23 +63,9 @@ public class WordAdapter extends ArrayAdapter {
         if (currentWord.getImageId() == 0)
             iconView.setVisibility(View.GONE);
 
-
-//        // Playing translation audio
-//        View textContainer = listItemView.findViewById(R.id.text_container);
-//        textContainer.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                MediaPlayer audio = MediaPlayer.create(getContext(), currentWord.getAudioId());
-//                audio.start();
-//            }
-//        });
-
-
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
-
-//        return super.getView(position, convertView, parent);
     }
 
 }
